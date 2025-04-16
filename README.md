@@ -8,16 +8,20 @@ This assignment involves enhancing a Chrome extension developed by one of the To
 ## Project Description
 Nara is a Chrome extension that helps users manage their tasks and reminders efficiently. Your task is to enhance this extension by implementing new features.
 
-## Enhancement Options
-Choose one of the following enhancements to implement:
+## ✨ Feature Enhancements by Jeslyn Guo
 
-1. **Speech Bubble Encouragement**: Implement a feature where, whenever the user checks off a task, a speech or thought bubble appears near the deer with a short, encouraging message (e.g., “Great job!”, “You’re making progress!”, “Keep going!”).
-2. **Daily Gratitude Log**: Implement a small text area where users can note one thing they’re grateful for each day. Over time, they can revisit a dedicated “gratitude log” to see their positive moments. Provide an interesting method to save these entries and display them on a separate screen so users can easily access their past entries.
-3. **Mood Selection Prompt**: Implement a simple mood selection feature(e.g., happy, stressed, neutral) with a small icon or emoji. This allows users to log their emotional state quickly each day.
-4. **Rotating Weekly Challenge**: Implement a weekly challenge system—such as “Drink 8 glasses of water each day” or “Take a 10-minute walk daily.” Users can check off these mini-challenges alongside their normal tasks for extra motivation.
-5. **Inspirational Quote Overlay**: Implement a short inspirational quote or positive affirmation that appears on each new tab, displayed in a subtle text overlay.
-6. **Implement a History Feature**: Maintain a log of all tasks and reminders created by the user, allowing them to revisit past items and track progress over time.
-7. **Custom Feature**: Propose a unique feature (requires instructor/TA approval).
+As part of the HW4 Chrome Extension Enhancement assignment for CIS 3500, I implemented the following two features in the **Nara** extension:
+
+### 1. 🗨️ Speech Bubble Encouragement
+- When a user checks off a task, a soft speech bubble appears near the deer with a randomized encouraging message such as *“Great job!”* or *“One step closer!”*.
+- The bubble appears temporarily to provide positive reinforcement and fades away after a short duration.
+- Positioned and styled to align with the visual tone of the extension.
+
+### 2. 🌸 Inspirational Quote Overlay
+- On each new tab load, a randomly selected inspirational quote or affirmation appears in the **bottom-left corner** of the screen.
+- The text is rendered in a soft white cursive font, matching the aesthetic of the existing Nara message: *“who do you want to care for today?”*.
+- This feature is designed to offer gentle, calming motivation without disrupting the user experience.
+
 
 ## Getting Started
 
