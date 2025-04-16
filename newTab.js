@@ -9,13 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   speechBubble.classList.add("hidden");
   document.body.appendChild(speechBubble);
 
-  //inspirational quote container - NEW 
-  const quoteOverlay = document.createElement("div");
-  quoteOverlay.id = "quote-overlay";
-  quoteOverlay.textContent = inspirationalQuotes[Math.floor(Math.random() * inspirationalQuotes.length)];
-  document.body.appendChild(quoteOverlay);
-
-
   const categoriesContainer = document.getElementById("categories-container");
   const tasksContainer = document.getElementById("tasks-container");
   const taskList = document.getElementById("task-list");
@@ -163,6 +156,13 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "others", // Link to the "Others" category
     },
   ];
+
+  //inspirational quote container - NEW 
+  const quoteOverlay = document.createElement("div");
+  quoteOverlay.id = "quote-overlay";
+  quoteOverlay.textContent = inspirationalQuotes[Math.floor(Math.random() * inspirationalQuotes.length)];
+  document.body.appendChild(quoteOverlay);
+    
 
   //function to show encouragement speech bubble - NEW 
   function showEncouragementBubble() {

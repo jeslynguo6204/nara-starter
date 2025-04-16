@@ -530,17 +530,19 @@ input[type="checkbox"]:checked+.task-text {
   /* inspirational quote - NEW */
   #quote-overlay {
     position: fixed;
-    bottom: 16px;
-    right: 24px;
-    font-size: 13px;
+    bottom: 18px;
+    left: 36px; 
+    font-size: 24px;
     font-style: italic;
-    color: rgba(68, 68, 68, 0.8);
+    color: rgba(255, 255, 255, 0.9); 
     opacity: 0.85;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Slackside One', cursive;
     z-index: 500;
     max-width: 300px;
     text-align: right;
     line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    white-space: nowrap;
   }
   
   
