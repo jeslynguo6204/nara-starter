@@ -526,4 +526,21 @@ input[type="checkbox"]:checked+.task-text {
       transform: scale(0.95);
     }
   }
+
+  /* inspirational quote - NEW */
+  #quote-overlay {
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(68, 68, 68, 0.8);
+    opacity: 0.85;
+    font-family: 'DM Sans', sans-serif;
+    z-index: 500;
+    max-width: 300px;
+    text-align: right;
+    line-height: 1.4;
+  }
+  
   

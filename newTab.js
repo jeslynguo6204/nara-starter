@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
   speechBubble.classList.add("hidden");
   document.body.appendChild(speechBubble);
 
+  //inspirational quote container - NEW 
+  const quoteOverlay = document.createElement("div");
+  quoteOverlay.id = "quote-overlay";
+  quoteOverlay.textContent = inspirationalQuotes[Math.floor(Math.random() * inspirationalQuotes.length)];
+  document.body.appendChild(quoteOverlay);
+
 
   const categoriesContainer = document.getElementById("categories-container");
   const tasksContainer = document.getElementById("tasks-container");
@@ -30,6 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
     "Another win!",
     "One step closer!",
   ]
+
+  //inspirational quotes - NEW 
+  const inspirationalQuotes = [
+    "Take a breath. You’re doing just fine.",
+    "Every day is a step forward.",
+    "You are enough, exactly as you are.",
+    "Kindness counts – especially to yourself.",
+    "You’ve already made progress just by showing up.",
+    "Small moments of care create big waves of change.",
+    "You deserve the same compassion you give others.",
+    "Joy can be found in the smallest things.",
+    "You’re growing, even if it doesn’t feel like it yet.",
+    "It's okay to move at your own pace."
+  ];
 
   // Initial background image with 5 deers
   const initialBackground = "assets/original.jpg";
