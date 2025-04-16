@@ -8,16 +8,16 @@ This assignment involves enhancing a Chrome extension developed by one of the To
 ## Project Description
 Nara is a Chrome extension that helps users manage their tasks and reminders efficiently. Your task is to enhance this extension by implementing new features.
 
-## ✨ Feature Enhancements by Jeslyn Guo
+## Feature Enhancements by Jeslyn Guo
 
 As part of the HW4 Chrome Extension Enhancement assignment for CIS 3500, I implemented the following two features in the **Nara** extension:
 
-### 1. 🗨️ Speech Bubble Encouragement
+### 1. Speech Bubble Encouragement
 - When a user checks off a task, a soft speech bubble appears near the deer with a randomized encouraging message such as *“Great job!”* or *“One step closer!”*.
 - The bubble appears temporarily to provide positive reinforcement and fades away after a short duration.
 - Positioned and styled to align with the visual tone of the extension.
 
-### 2. 🌸 Inspirational Quote Overlay
+### 2. Inspirational Quote Overlay
 - On each new tab load, a randomly selected inspirational quote or affirmation appears in the **bottom-left corner** of the screen.
 - The text is rendered in a soft white cursive font, matching the aesthetic of the existing Nara message: *“who do you want to care for today?”*.
 - This feature is designed to offer gentle, calming motivation without disrupting the user experience.
