@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   backgroundContainer.className = "background-container";
   document.body.appendChild(backgroundContainer);
 
+  //speech bubble container - NEW 
+  const speechBubble = document.createElement("div");
+  speechBubble.id = "speech-bubble";
+  speechBubble.classList.add("hidden");
+  document.body.appendChild(speechBubble);
+
+
   const categoriesContainer = document.getElementById("categories-container");
   const tasksContainer = document.getElementById("tasks-container");
   const taskList = document.getElementById("task-list");
@@ -13,6 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // for controlling when hovers are active
   let hoverListeners = [];
+
+
+  //encouragement messages for speech bubble - NEW 
+  const encouragementMessages = [
+    "Great job!",
+    "Keep going!",
+    "You’re crushing it!",
+    "Another win!",
+    "One step closer!",
+  ]
 
   // Initial background image with 5 deers
   const initialBackground = "assets/original.jpg";
@@ -127,6 +144,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
+  //function to show encouragement speech bubble - NEW 
+  function showEncouragementBubble() {
+    speechBubble.textContent = encouragementMessages[Math.floor(Math.random() * encouragementMessages.length)];
+    speechBubble.classList.remove("hidden");
+  
+    setTimeout(() => {
+      speechBubble.classList.add("hidden");
+    }, 2000);
+  }
+  
   function removeAllListeners() {
     hoverListeners.forEach((listener) => {
       document.removeEventListener("mousemove", listener);
@@ -671,6 +698,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tasks[originalIndex].completed = checkbox.checked;
 
         if (tasks[originalIndex].completed) {
+          showEncouragementBubble(); 
           const deleteButton = taskItem.querySelector(".delete-task");
           if (deleteButton) deleteButton.remove();
         }
